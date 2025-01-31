@@ -1,11 +1,9 @@
 <template>
   <div>
-    <h1>Login View</h1>
+    <h1>Login Page</h1>
   </div>
 </template>
 <script>
-export default {
-  name: "LoginView",
-};
+export default {};
 </script>
 <style></style>

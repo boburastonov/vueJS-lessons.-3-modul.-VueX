@@ -1,11 +1,9 @@
 <template>
   <div>
-    <h1>Register View</h1>
+    <h1>Register Page</h1>
   </div>
 </template>
 <script>
-export default {
-  name: "RegisterView",
-};
+export default {};
 </script>
 <style></style>
