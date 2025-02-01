@@ -1,9 +1,15 @@
 <template>
-  <div>
-    <h1>Register Page</h1>
+  <div class="text-center">
+    <Register />
   </div>
 </template>
 <script>
-export default {};
+import Register from "@/components/Register.vue";
+
+export default {
+  components: {
+    Register,
+  },
+};
 </script>
 <style></style>

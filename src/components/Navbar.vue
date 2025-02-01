@@ -7,16 +7,26 @@
         class="d-flex align-items-center link-body-emphasis text-decoration-none"
         @click="$router.push({ name: 'home' })"
       >
-        <img class="w-25" src="../../public/logo.png" alt="logo" />
+        <img
+          src="../../public/logo.png"
+          alt="logo"
+          style="width: 130px; cursor: pointer"
+        />
       </a>
 
       <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 link-body-emphasis text-decoration-none">
-          <router-link :to="{ name: 'login' }">Login</router-link>
-        </a>
-        <a class="me-3 py-2 link-body-emphasis text-decoration-none"
-          ><router-link :to="{ name: 'register' }">Register</router-link></a
+        <router-link
+          class="me-3 py-2 link-body-emphasis text-decoration-none"
+          :to="{ name: 'login' }"
         >
+          Login
+        </router-link>
+        <router-link
+          class="me-3 py-2 link-body-emphasis text-decoration-none"
+          :to="{ name: 'register' }"
+        >
+          Register
+        </router-link>
       </nav>
     </div>
   </nav>

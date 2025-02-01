@@ -2,11 +2,10 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 
-import components from "./components";
-
 const app = createApp(App);
 
-// components.map((component) => app.component(component.name, component));
+import components from "./ui-components";
+components.map((component) => app.component(component.name, component));
 
 app.use(router);
 
