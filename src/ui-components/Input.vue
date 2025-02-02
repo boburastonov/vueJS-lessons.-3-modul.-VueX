@@ -9,13 +9,15 @@
     <label for="floatingPassword">{{ label }}</label>
   </div>
 </template>
-<script>
-export default {
+<script setup>
+defineOptions({
   name: "Input",
-  props: {
-    label: String,
-    type: String,
-  },
-};
+});
+
+defineProps({
+  name: String,
+  label: String,
+  type: String,
+});
 </script>
 <style></style>

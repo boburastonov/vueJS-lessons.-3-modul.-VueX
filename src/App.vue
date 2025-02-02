@@ -4,10 +4,7 @@
     <router-view />
   </div>
 </template>
-<script>
-import Navbar from "./components/Navbar.vue";
-export default {
-  components: { Navbar },
-};
+<script setup>
+import Navbar from "@/components/Navbar.vue";
 </script>
 <style></style>

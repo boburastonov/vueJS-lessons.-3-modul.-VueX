@@ -3,9 +3,9 @@
     <slot></slot>
   </button>
 </template>
-<script>
-export default {
+<script setup>
+defineOptions({
   name: "Button",
-};
+});
 </script>
 <style></style>

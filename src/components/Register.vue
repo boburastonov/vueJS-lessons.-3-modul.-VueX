@@ -11,11 +11,22 @@
       <Input :type="'email'" :label="'Email address'" />
       <Input :type="'password'" :label="'Password'" />
 
-      <Button type="submit">Sign up</Button>
+      <Button type="submit" @click="submitHandler" :disabled="isLoading">{{
+        isLoading ? "Loading..." : "Sign up"
+      }}</Button>
     </form>
   </main>
 </template>
-<script>
-export default {};
+<script setup>
+import { computed } from "vue";
+import { useStore } from "vuex";
+
+const store = useStore();
+
+const isLoading = computed(() => store.state.auth.isLoading);
+const submitHandler = (e) => {
+  e.preventDefault();
+  store.commit("setLoading");
+};
 </script>
 <style></style>

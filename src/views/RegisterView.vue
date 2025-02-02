@@ -3,13 +3,7 @@
     <Register />
   </div>
 </template>
-<script>
+<script setup>
 import Register from "@/components/Register.vue";
-
-export default {
-  components: {
-    Register,
-  },
-};
 </script>
 <style></style>

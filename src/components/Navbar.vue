@@ -31,14 +31,5 @@
     </div>
   </nav>
 </template>
-<script>
-import { logo } from "@/constants";
-export default {
-  data() {
-    return {
-      logo,
-    };
-  },
-};
-</script>
+<script></script>
 <style></style>
